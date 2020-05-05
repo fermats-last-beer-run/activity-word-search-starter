@@ -15,9 +15,7 @@ console.log(searchSpace);
 //Highlights all instances of a word within a text block
 function highlight(word, text){
   let regex = new RegExp("\\b(" + word + ")\\b", "gi");
-  console.log(regex)
   text = text.replace(regex, "<mark>$1</mark>");
-  console.log(text)
   return text;
 }
 // Counts number of instances of word within textArray, returns int
