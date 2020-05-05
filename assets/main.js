@@ -39,8 +39,10 @@ searchButton.addEventListener('click', function () {
   quoteSentence.innerHTML = originalText;
   // Clean userInput
   let userInput = textboxInput.value.trim().toLowerCase();
-
-  if (searchSpace.includes(userInput)) {
+  if (userInput = ' ') {
+    searchResults.innerHTML = "No match found"
+  }
+  else if (searchSpace.includes(userInput)) {
     // Split text into array and count each instance of word
     let searchArray = searchSpace.split(' ');
     let instances = countInstances(userInput, searchArray);
