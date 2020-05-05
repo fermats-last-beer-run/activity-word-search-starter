@@ -37,7 +37,7 @@ searchButton.addEventListener('click', function () {
   quoteSentence.innerHTML = originalText;
   // Clean userInput
   let userInput = textboxInput.value.trim().toLowerCase();
-  if (userInput = ' ') {
+  if (userInput == '') {
     searchResults.innerHTML = "No match found"
   }
   else if (searchSpace.includes(userInput)) {
